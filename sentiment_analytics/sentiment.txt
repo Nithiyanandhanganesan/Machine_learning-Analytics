@@ -1,0 +1,17 @@
+pre-processing techniques include; Data cleaning, Noise treatment, sampling,
+strategy’s to deal with missing values, Normalisation, and feature extraction.
+
+ Sentiment analysis which is also known as
+opinion mining focuses on discovering patterns in text that can be analysed to classify the sentiment
+in that text.
+
+Natural
+language processing techniques are used to transform this raw data into a form that it can be
+processed efficiently by a computer.
+
+Natural language processing uses many different methods to process text such as string processing
+(Tokenizers, sentence tokenizers, stemmers tagging) or by using speech tagging (n-gram, backoff,
+Brill, HMM, TnT).
+
+
+

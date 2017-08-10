@@ -1,0 +1,55 @@
+Simple linear regression is a statistical method that allows us to summarize and study relationships between two continuous (quantitative) variables:
+
+One variable, denoted x, is regarded as the predictor, explanatory, or independent variable.
+The other variable, denoted y, is regarded as the response, outcome, or dependent variable.
+
+Simple linear regression gets its adjective "simple," because it concerns the study of only one predictor variable.
+
+
+In simple linear regression, we predict scores on one variable from the scores on a second variable. The variable we are predicting is called the criterion variable and is referred to as Y.
+The variable we are basing our predictions on is called the predictor variable and is referred to as X.
+
+X	Y
+1.00	1.00
+2.00	2.00
+3.00	1.30
+4.00	3.75
+5.00	2.25
+
+
+
+Linear regression consists of finding the best-fitting straight line through the points. The best-fitting line is called a regression line. 
+The black diagonal line in Figure 2 is the regression line and consists of the predicted score on Y for each possible value of X. 
+The vertical lines from the points to the regression line represent the errors of prediction. As you can see, the red point is very near the regression line; 
+its error of prediction is small. By contrast, the yellow point is much higher than the regression line and therefore its error of prediction is large.
+
+The error of prediction for a point is the value of the point minus the predicted value (the value on the line). Table 2 shows the predicted values (Y') and the errors of prediction (Y-Y'). For example, the first point has a Y of 1.00 and a predicted Y (called Y') of 1.21. Therefore, its error of prediction is -0.21.
+Table 2. Example data.
+X	Y	Y'	Y-Y'	(Y-Y')2
+1.00	1.00	1.210	-0.210	0.044
+2.00	2.00	1.635	0.365	0.133
+3.00	1.30	2.060	-0.760	0.578
+4.00	3.75	2.485	1.265	1.600
+5.00	2.25	2.910	-0.660	0.436
+
+
+the most commonly-used criterion for the best-fitting line is the line that minimizes the sum of the squared errors of prediction. 
+That is the criterion that was used to find the line in Figure 2. The last column in Table 2 shows the squared errors of prediction. 
+The sum of the squared errors of prediction shown in Table 2 is lower than it would be for any other regression line.
+
+The formula for a regression line is
+Y' = bX + A
+
+where Y' is the predicted score, b is the slope of the line, and A is the Y intercept. The equation for the line in Figure 2 is
+Y' = 0.425X + 0.785
+
+For X = 1,
+Y' = (0.425)(1) + 0.785 = 1.21.
+
+For X = 2,
+Y' = (0.425)(2) + 0.785 = 1.64.
+
+
+
+
+Finding the best fit line and words above best fit is positive and below best fit is negative.

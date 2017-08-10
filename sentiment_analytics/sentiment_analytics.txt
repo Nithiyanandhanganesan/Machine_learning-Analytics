@@ -1,0 +1,191 @@
+Different Levels of Analysis:
+=================================
+
+Document level: The task at this level is to classify whether a whole opinion document expresses a positive 
+or negative sentiment (Pang et al., 2002; Turney, 2002). For example, given a product review, the system determines
+ whether the review expresses an overall positive or negative opinion about the product. This task is commonly known as document-level sentiment classification.
+
+Sentence level: The task at this level goes to the sentences and determines whether each sentence expressed a positive, 
+negative, or neutral opinion. Neutral usually means no opinion.
+
+
+
+The most important indicators of sentiments are sentiment words, also called opinion words. 
+A list of such words and phrases is called a sentiment lexicon.
+
+post fake opinions to promote,Such individuals are called opinion spammers and their activities are called opinion spamming
+
+
+Definition (Opinion): An opinion is a quadruple, (g, s, h, t), 
+where g is the opinion (or sentiment) target, s is the sentiment about the target, h is the opinion holder, and t is the time when the opinion was expressed.
+
+Definition (entity): An entity e is a product, service, topic, issue, person, organization, or event. 
+It is described with a pair, e: (T, W), where T is a hierarchy of parts, sub-parts, and so on, and W is a set of attributes of e. 
+Each part or sub-part also has its own set of attributes.
+entities are also called objects, and aspects are also called features (as in product features).
+
+A particular model of camera is an entity, e.g., Canon G12. It has a set of attributes, e.g., picture quality, size, and weight, 
+and a set of parts, e.g., lens, viewfinder, and battery. 
+Battery also has its own set of attributes, e.g., battery life and battery weight.
+
+
+After decomposing the opinion target, we can redefine an opinion
+Definition (opinion): An opinion is a quintuple, (ei, aij, sijkl, hk, tl), where ei is the name of an entity, 
+aij is an aspect of ei, sijkl is the sentiment on aspect aj of entity ei, 
+hk is the opinion holder, and ti is the time when the opinion is expressed by hk.
+
+
+An entity category represents a unique entity, while an entity expression is an actual word or phrase that appears in the text indicating an entity category.
+Each entity category (or simply entity) should have a unique name in a particular application. The process of grouping entity expressions into entity categories is called entity categorization.
+
+Aspect expressions that are nouns and noun phrases are called explicit aspect expressions.
+For example, “picture quality” in “The picture quality of this camera is great” is an explicit aspect expression.
+
+Aspect expressions that are not nouns or noun phrases are called implicit aspect expressions.
+For example, “expensive” is an implicit aspect expression in “This camera is expensive.” It implies the aspect price. 
+Many implicit aspect expressions are adjectives and adverbs that are used to describe or qualify some specific aspects, 
+e.g., expensive (price), and reliably (reliability). They can also be verb and verb phrases, e.g., “I can install the software easily.”
+
+
+inally, to summarize, given a set of opinion documents D, sentiment analysis consists of the following six main tasks.
+Task 1 (entity extraction and categorization): Extract all entity expressions in D, and categorize or group synonymous entity expressions into entity clusters (or categories). Each entity expression cluster indicates a unique entity ei.
+Task 2 (aspect extraction and categorization): Extract all aspect expressions of the entities, and categorize these aspect expressions into clusters. Each aspect expression cluster of entity ei represents a unique aspect aij.
+Task 3 (opinion holder extraction and categorization): Extract opinion holders for opinions from text or structured data and categorize them. The task is analogous to the above two tasks.
+Task 4 (time extraction and standardization): Extract the times when opinions are given and standardize different time formats. The task is also analogous to the above tasks.
+Task 5 (aspect sentiment classification): Determine whether an opinion on an aspect aj is positive, negative or neutral, or assign a numeric sentiment rating to the aspect.
+Task 6 (opinion quintuple generation): Produce all opinion quintuples (ei, aij, sijkl, hk, tl) expressed in document d based on the results of the above tasks. This task is seemingly very simple but it is in fact very difficult in many cases as Example 4 below shows.
+
+
+Example 4: Posted by: big John                Date: Sept. 15, 2011
+(1) I bought a Samsung camera and my friends brought a Canon camera yesterday. 
+(2) In the past week, we both used the cameras a lot. 
+(3) The photos from my Samy are not that great, and the battery life is short too. 
+(4) My friend was very happy with his camera and loves its picture quality. 
+(5) I want a camera that can take good photos. 
+(6) I am going to return it tomorrow.
+ 
+Task 1 should extract the entity expressions, “Samsung,” “Samy,” and “Canon,” and group “Samsung” and “Samy” together as they represent the same entity. 
+Task 2 should extract aspect expressions “picture,” “photo,” and “battery life,” and group “picture” and “photo” together as for cameras they are synonyms. 
+Task 3 should find the holder of the opinions in sentence (3) to be big John (the blog author) and the holder of the opinions in sentence (4) to be big John's friend. 
+Task 4 should also find the time when the blog was posted is Sept-15–32. 
+Task 5 should find that sentence (3) gives a negative opinion to the picture quality of the Samsung camera and also a negative opinion to its battery life. 
+Sentence (4) gives a positive opinion to the Canon camera as a whole and also to its picture quality. Sentence (5) seemingly expresses a positive opinion, but it does not. 
+To generate opinion quintuples for sentence (4) we need to know what “his camera” and “its” refer to. 
+Task 6 should finally generate the following four opinion quintuples:
+
+(Samsung, picture_quality, negative, bigJohn, Sept-15-2011)
+(Samsung, battery_life, negative, bigJohn, Sept-15-2011)
+(Canon, GENERAL, positive, big John's_friend, Sept-15-2011)
+(Canon, picture_quality, positive, bigJohn's_friend, Sept-15-2011)
+
+
+
+ DIFFERENT TYPES OF OPINIONS:
+====================================
+
+Regular opinion: A regular opinion is often referred to simply as an opinion in the literature and it has two main sub-types
+
+  Direct opinion: A direct opinion refers to an opinion expressed directly on an entity or an entity aspect, e.g., “The picture quality is great.”
+  Indirect opinion: An indirect opinion is an opinion that is expressed indirectly on an entity or aspect of an entity based on its effects on some other entities. 
+         This sub-type often occurs in the medical domain. For example, the sentence “After injection of the drug, my joints felt worse” describes an undesirable 
+         effect of the drug on “my joints”, which indirectly gives a negative opinion or sentiment to the drug. In the case, the entity is the drug and the aspect 
+         is the effect on joints.
+
+
+Comparative opinion: A comparative opinion expresses a relation of similarities or differences between two or more entities and/or a preference of the
+opinion holder based on some shared aspects of the entities (Jindal and Liu, 2006a, 2006b). For example, the sentences, “Coke tastes better than Pepsi”
+
+
+ SUBJECTIVITY AND EMOTION:
+=================================
+
+Definition (sentence subjectivity):
+An objective sentence presents some factual information about the world, while a subjective sentence expresses some personal feelings, views, or beliefs.
+An example objective sentence is “iPhone is an Apple product.” An example subjective sentence is “I like iPhone.” 
+The task of determining whether a sentence is subjective or objective is called subjectivity classification 
+
+Definition (emotion): Emotions are our subjective feelings and thoughts.
+Emotions have been studied in multiple fields, e.g., psychology, philosophy, and sociology. 
+The studies are very broad, from emotional responses of physiological reactions (e.g., heart rate changes, blood pressure, sweating and so on), 
+facial expressions, gestures and postures to different types of subjective experiences of an individual's state of mind. 
+
+  Rational evaluation: Such evaluations are from rational reasoning, tangible beliefs, and utilitarian attitudes. 
+  For example, the following sentences express rational evaluations: “The voice of this phone is clear,” “This car is worth the price,” and “I am happy with this car.”
+
+  Emotional evaluation: Such evaluations are from non-tangible and emotional responses to entities which go deep into people's state of mind. 
+  For example, the following sentences express emotional evaluations: “I love iPhone,” “I am so angry with their service people” and “This is the best car ever built.”
+
+To make use of these two types of evaluations in practice, we can design 5 sentiment ratings, emotional negative (-2), rational negative (-1), neutral (0), 
+rational positive (+1), and emotional positive (+2). In practice, neutral often means no opinion or sentiment expressed.
+
+
+2.5 AUTHOR AND READER STANDPOINT:
+====================================
+
+We can look at an opinion from two perspectives, i.e., the author (opinion holder) who expresses the opinion, and the reader who reads the opinion.
+ For example, one wrote “The housing price has gone down, which is bad for the economy.” 
+Clearly, this author talks about the negative impact of the dropping housing price on the economy. 
+However, this sentence can be perceived in both ways by readers. For sellers, this is indeed negative, but for buyers, this could well be a piece of good news.
+
+
+Document Sentiment Classification:
+================================================
+
+Problem definition: 
+Given an opinion document d evaluating an entity, determine the overall sentiment s of the opinion holder about the entity, 
+i.e., determine s expressed on aspect GENERAL in the quintuple
+(_, GENERAL, s, _, _),
+where the entity e, opinion holder h, and time of opinion t are assumed known or irrelevant (do not care).
+
+There are two formulations based on the type of value that s takes. If s takes categorical values, e.g., positive and negative, then it is a classification problem. 
+If s takes numeric values or ordinal scores within a given range, e.g., 1–32, the problem becomes regression.
+
+Assumption: Sentiment classification or regression assumes that the opinion document d (e.g., a product review) expresses opinions on a single entity e
+ and contains opinions from a single opinion holder h.
+
+n practice, if an opinion document evaluates more than one entity, then the sentiments on the entities can be different. 
+For example, the opinion holder may be positive about some entities and negative about others. 
+Thus, it does not make practical sense to assign one sentiment orientation to the entire document in this case. 
+It also does not make much sense if multiple opinion holders express opinions in a single document because their opinions can be different too.
+
+Most existing techniques for document-level classification use supervised learning, although there are also unsupervised methods.
+Sentiment regression has been done mainly using supervised learning. 
+
+SENTIMENT CLASSIFICATION USING SUPERVISED LEARNING:
+=========================================================================
+
+Sentiment classification is usually formulated as a two-class classification problem, positive and negative. 
+Training and testing data used are normally product reviews. Since online reviews have rating scores assigned by their reviewers, e.g., 1–32 stars, 
+the positive and negative classes are determined using the ratings. 
+For example, a review with 4 or 5 stars is considered a positive review, and a review with 1–32 stars is considered a negative review.
+
+Traditional text classification mainly classifies documents of different topics, e.g., politics, sciences, and sports.
+In such classifications, topic-related words are the key features. 
+However, in sentiment classification, sentiment or opinion words that indicate positive or negative opinions are more important,
+ e.g., great, excellent, amazing, horrible, bad, worst, etc.
+
+Since it is a text classification problem, any existing supervised learning method can be applied, e.g., naïve Bayes classification, and support vector machines (SVM).
+
+Some of the example features are the following.
+Terms and their frequency:
+    These features are individual words (unigram) and their n-grams with associated frequency counts. 
+Part of speech: 
+    The part-of-speech (POS) of each word can be important too. Words of different parts of speech (POS) may be treated differently. 
+    For example, it was shown that adjectives are important indicators of opinions. Thus, some researchers treated adjectives as special features.
+Sentiment words and phrases: 
+    Sentiment words are words in a language that are used to express positive or negative sentiments. For example, good, wonderful, and amazing are positive sentiment
+    words, and bad, poor, and terrible are negative sentiment words. Most sentiment words are adjectives and adverbs, but nouns (e.g., rubbish, junk, and crap) 
+    and verbs (e.g., hate and love) can also be used to express sentiments. Apart from individual words, there are also sentiment phrases and idioms, e.g., 
+    cost someone an arm and a leg. Rules of opinions
+
+
+SENTIMENT RATING PREDICTION:
+===============================================
+
+
+
+
+
+
+
+

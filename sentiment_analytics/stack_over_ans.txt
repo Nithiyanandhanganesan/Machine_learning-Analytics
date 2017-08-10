@@ -1,0 +1,74 @@
+	
+This is a list I wrote a few weeks ago, from my blog. Some of these datasets have been recently included in the NLTK Python platform.
+
+Lexicons
+
+Opinion Lexicon by Bing Liu
+URL: http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon
+PAPERS: Mining and summarizing customer reviews
+NOTES: Included in the NLTK Python platform
+MPQA Subjectivity Lexicon
+URL: http://mpqa.cs.pitt.edu/#subj_lexicon
+PAPERS: Recognizing Contextual Polarity in Phrase-Level Sentiment Analysis (Theresa Wilson, Janyce Wiebe, and Paul Hoffmann, 2005).
+SentiWordNet
+URL: http://sentiwordnet.isti.cnr.it
+NOTES: Included in the NLTK Python platform
+Harvard General Inquirer
+URL: http://www.wjh.harvard.edu/~inquirer
+PAPERS: The General Inquirer: A Computer Approach to Content Analysis (Stone, Philip J; Dexter C. Dunphry; Marshall S. Smith; and Daniel M. Ogilvie. 1966)
+Linguistic Inquiry and Word Counts (LIWC)
+URL: http://www.liwc.net
+Vader Lexicon
+URLs: https://github.com/cjhutto/vaderSentiment, http://comp.social.gatech.edu/papers
+PAPERS: Vader: A parsimonious rule-based model for sentiment analysis of social media text (Hutto, Gilbert. 2014)
+Datasets
+
+MPQA Datasets
+URL: http://mpqa.cs.pitt.edu
+NOTES: GNU Public License.
+Political Debate data
+Product Debate data
+Subjectivity Sense Annotations
+Sentiment140 (Tweets)
+URL: http://help.sentiment140.com/for-students
+PAPERS: Twitter Sent classification using Distant Supervision (Go, Alec, Richa Bhayani, and Lei Huang)
+URLs: http://help.sentiment140.com, https://groups.google.com/forum/#!forum/sentiment140
+STS-Gold (Tweets)
+URL: http://www.tweenator.com/index.php?page_id=13
+PAPERS: Evaluation datasets for twitter sentiment analysis (Saif, Fernandez, He, Alani)
+NOTES: As Sentiment140, but the dataset is smaller and with human annotators. It comes with 3 files: tweets, entities (with their sentiment) and an aggregate set.
+Customer Review Dataset (Product reviews)
+
+URL: http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#datasets
+PAPERS: Mining and summarizing customer reviews
+NOTES: Title of review, product feature, positive/negative label with opinion strength, other info (comparisons, pronoun resolution, etc.)
+Included in the NLTK Python platform
+Pros and Cons Dataset (Pros and cons sentences)
+
+URL: http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#datasets
+PAPERS: Mining Opinions in Comparative Sentences (Ganapathibhotla, Liu 2008)
+NOTES: A list of sentences tagged <pros> or <cons>
+Included in the NLTK Python platform
+Comparative Sentences (Reviews)
+
+URL: http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#datasets
+PAPERS: Identifying Comparative Sentences in Text Documents (Nitin Jindal and Bing Liu), Mining Opinion Features in Customer Reviews (Minqing Hu and Bing Liu)
+NOTES: Sentence, POS-tagged sentence, entities, comparison type (non-equal, equative, superlative, non-gradable)
+Included in the NLTK Python platform
+Sanders Analytics Twitter Sentiment Corpus (Tweets)
+URL: http://www.sananalytics.com/lab/twitter-sentiment
+5513 hand-classified tweets wrt 4 different topics. Because of Twitter’s ToS, a small Python script is included to download all of the tweets. The sentiment classifications themselves are provided free of charge and without restrictions. They may be used for commercial products. They may be redistributed. They may be modified.
+Spanish tweets (Tweets)
+URL: http://www.daedalus.es/TASS2013/corpus.php
+SemEval 2014 (Tweets)
+URL: http://alt.qcri.org/semeval2014/task9
+You MUST NOT re-distribute the tweets, the annotations or the corpus obtained (from the readme file)
+Various Datasets (Reviews)
+URL: https://personalwebs.coloradocollege.edu/~mwhitehead/html/opinion_mining.html
+PAPERS: Building a General Purpose Cross-Domain Sentiment Mining Model (Whitehead and Yaeger), Sentiment Mining Using Ensemble Classification Models (Whitehead and Yaeger)
+Various Datasets #2 (Reviews)
+URL: http://www.text-analytics101.com/2011/07/user-review-datasets_20.html
+References:
+
+Keenformatics - Sentiment Analysis lexicons and datasets (my blog)
+Personal experience

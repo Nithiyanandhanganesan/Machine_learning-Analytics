@@ -1,0 +1,31 @@
+Intro to all algorithm:
+
+https://www.analyticsvidhya.com/blog/2015/08/common-machine-learning-algorithms/
+
+brief intro:
+
+http://ataspinar.com/2015/11/16/text-classification-and-sentiment-analysis/
+
+
+kaggle:
+
+https://www.kaggle.com/c/word2vec-nlp-tutorial/details/part-1-for-beginners-bag-of-words
+
+
+http://fastml.com/classifying-text-with-bag-of-words-a-tutorial/
+
+
+
+data cleaning process:
+
+http://spark.apache.org/docs/latest/ml-features.html#tf-idf
+
+
+I have started with sentiment analytics. I have done below steps:
+1. Collected twitter feeds and manually updated the sentiment for 50%(train set) of data.
+2. Tokenized(train set) into words using tokenizer.
+3. Removed stop words
+4. Applied the tf-idf to find the word frequency.
+Now my train set is clean , and trained the model using naive bayes. 
+
+I have remaining 50% feeds(test set). Now I have to test the test set with trained model. Test set may have some new words. So, in which step I need to include the sentiment dictionary which has list of positive and negative words?
