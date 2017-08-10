@@ -1,0 +1,22 @@
+Statistics:
+================
+descriptive statistics:
+Descriptive statistics provide a concise summary of data. 
+You can summarize data numerically or graphically. For example, the manager of a fast food restaurant tracks the wait times for customers during the lunch hour for a week and summarizes the data.
+
+inferential statistics:
+Inferential statistics use a random sample of data taken from a population to describe and make inferences about 
+the population. Inferential statistics are valuable when it is not convenient or possible to examine each 
+member of an entire population.
+
+CASES & VARIABLES:
+========================
+
+EG: Football players are "CASES" whereas their body weight, colour represents "variables".
+eg: Football players are "CASES" whereas thier jersy colour, city respresents "variables".
+
+CATOGORICAL VARIABLES:
+======================
+  - NOMINAL
+  - ORDINAL  (ORDER eg: low,medium,high)
+  - INTERVAL (INTERVAL eg: income)

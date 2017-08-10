@@ -1,0 +1,139 @@
+The mean is the usual average,
+The median is the middle value
+The mode is the number that is repeated more often than any other
+
+Variance:
+============
+
+Variance measures how far a data set is spread out. 
+The average of the squared differences from the mean.
+
+The data set 12, 12, 12, 12, 12 has a var. of zero (the numbers are identical).
+The data set 12, 12, 12, 12, 13 has a var. of 0.167; a small change in the numbers equals a very small var.
+The data set 12, 12, 12, 12, 13013 has a var. of 28171000; a large change in the numbers equals a very large number.
+
+sigma=(summation((x-(mean(x))^2/n ) 
+
+Covariance:
+==============
+
+Covariance is a measure of how much two random variables vary together. It’s similar to variance, 
+but where variance tells you how a single variable varies, co variance tells you how two variables vary together.
+eg: how change in x affect y.
+
+Sxy = summation(x-mean(x))   ( y - mean(y))   / (n -1)
+
+if covariance result in positive then there is positive relationship between x and y (i.e if x increases y also increases)
+
+
+Correlation coefficient:
+=========================
+
+How strong the relationship between x and y.
+It range between -1 to 1.
+
+1  => perfect positive correlation
+-1 => prefect negative correlation
+0 =>  no relationship
+
+rxy= Sxy / (Sx*Sy)
+
+Sx => standard deviation of x
+
+
+Mean = average
+Median = middle value
+mode =most repeated number
+
+
+PERCENTILE:
+===================
+
+You might know that you scored 67 out of 90 on a test. But that figure has no real meaning unless you know what percentile you fall into. 
+If you know that your score is in the 90th percentile, that means you scored better than 90% of people who took the test.
+
+The 25th percentile is also called the first quartile.
+The 50th percentile is generally the median (if you’re using the third definition — see below).
+The 75th percentile is also called the third quartile.
+The difference between the third and first quartiles is the interquartile range.
+
+
+Symmetric distribution has equal mean and median values. For a positively skewed distribution, 
+the median is greater than the mean and for a negatively skewed distribution, 
+the mean value is greater than the median's value.
+
+
+Properties of a normal distribution:
+============================================
+
+The mean, mode and median are all equal.
+The curve is symmetric at the center (i.e. around the mean, µ).
+Exactly half of the values are to the left of center and exactly half the values are to the right.
+The total area under the curve is 1.
+
+
+Correlation matrix:
+============================
+
+A correlation matrix is a table showing correlation coefficients between sets of variables. 
+Each random variable (Xi) in the table is correlated with each of the other values in the table (Xj). 
+This allows you to see which pairs have the highest correlation.
+
+SKEWNESS:
+===============
+
+A distribution is skewed if one tail is longer than another. These distributions are sometimes called asymmetric or asymmetrical distributions as 
+they don’t show any kind of symmetry.
+
+
+A left-skewed distribution has a long left tail. Left-skewed distributions are also called negatively-skewed distributions. 
+That’s because there is a long tail in the negative direction on the number line. 
+
+A right-skewed distribution has a long right tail. Right-skewed distributions are also called positive-skew distributions. That’s because there is a long tail in the positive direction on the number line. 
+The mean is also to the right of the peak.
+
+•	A symmetrical distribution has a skewness of zero.
+•	An asymmetrical distribution with a long tail to the right (higher values) has a positive skew.
+•	An asymmetrical distribution with a long tail to the left (lower values) has a negative skew.
+
+If skewness is less than -1 or greater than +1, the distribution is highly skewed.
+If skewness is between -1 and -½ or between +½ and +1, the distribution is moderately skewed.
+If skewness is between -½ and +½, the distribution is approximately symmetric.
+
+KURTOSIS:
+=================
+
+kurtosis is all about the tails of the distribution – not the peakedness or flatness.  It measures the tail-heaviness of the distribution.
+
+So, if a dataset has a positive kurtosis, it has more in the tails than the normal distribution.  
+If a dataset has a negative kurtosis, it has less in the tails than the normal distribution. 
+
+The kurtosis decreases as the tails become lighter.  It increases as the tails become heavier.  
+
+A normal distribution has kurtosis exactly 3 (excess kurtosis exactly 0). Any distribution with kurtosis ˜3 (excess ˜0) is called mesokurtic.
+A distribution with kurtosis <3 (excess kurtosis <0) is called platykurtic. Compared to a normal distribution, its tails are shorter and thinner, and often its central peak is lower and broader.
+A distribution with kurtosis >3 (excess kurtosis >0) is called leptokurtic. Compared to a normal distribution, its tails are longer and fatter, and often its central peak is higher and sharper.
+
+COEFFICIENT/P-VALUE:
+==========================
+
+The p-value for each term tests the null hypothesis that the coefficient is equal to zero (no effect).
+ A low p-value (< 0.05) indicates that you can reject the null hypothesis. 
+In other words, a predictor that has a low p-value is likely to be a meaningful addition to your model because changes 
+in the predictor's value are related to changes in the response variable.
+
+Conversely, a larger (insignificant) p-value suggests that changes in the predictor are not associated with changes in the response.
+
+In the output below, we can see that the predictor variables of South and North are significant because both of their p-values are 0.000. 
+However, the p-value for East (0.092) is greater than the common alpha level of 0.05, which indicates that it is not statistically significant.
+
+In simple or multiple linear regression, the size of the coefficient for each independent variable gives you the size of the effect that variable is 
+having on your dependent variable, and the sign on the coefficient (positive or negative) gives you the direction of the effect. 
+In regression with a single independent variable, the coefficient tells you how much the dependent variable is expected to increase 
+(if the coefficient is positive) or decrease (if the coefficient is negative) when that independent variable increases by one. 
+In regression with multiple independent variables, the coefficient tells you how much the dependent variable is expected to increase when that 
+independent variable increases by one, holding all the other independent variables constant. Remember to keep in mind the units which your 
+variables are measured in.
+
+
+

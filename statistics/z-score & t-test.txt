@@ -1,0 +1,71 @@
+z-score:
+===================
+
+z-score is the number of standard deviations from the mean a data point is.
+Z-score helps to find the common behaviour and exception behaviour.
+
+A z-score is also known as a standard score and it can be placed on a normal distribution curve. Z-scores range from -3 standard deviations 
+(which would fall to the far left of the normal distribution curve) up to +3 standard deviations 
+(which would fall to the far right of the normal distribution curve).
+
+If z-score is between -1 to +1 , then the observation is common, 
+              greater than -3 and greater than 3, then outliers.
+
+z = (x – µ) / s
+
+For example:
+
+A z-score of 1 is 1 standard deviation above the mean.
+A score of 2 is 2 standard deviations above the mean.
+A score of -1.8 is -1.8 standard deviations below the mean.
+
+In case of left side skewness, then it has large negative z-scores.
+
+=====================================================================================================================================================
+
+t-score & t-test:
+=====================
+
+A t-test helps you compare whether two groups have different average values (for example, whether men and women have different average heights).
+
+A t-test asks whether a difference between two groups’ averages is unlikely to have occurred because of random chance in sample selection. A difference is more likely to be meaningful and “real” if
+(1) the difference between the averages is large,
+(2) the sample size is large, and
+(3) responses are consistently close to the average values and not widely spread out (the standard deviation is low).
+
+
+if t-score is 0, then mean of sample data and actual data is same.
+
+======================================================================================================================================================
+p-score:
+=============================
+
+if alpha level is 100%, if confidence level is 98% , the p-value= 0.02 which 2%.
+
+if p-value,
+    less than or equal to 0.05 then reject the null hyphothesis.
+    greater than 0.05, then dont reject null hyphothesis.
+
+
+P-Value in Statistical Hypothesis Tests: What is it?
+Statistics Definitions > P Value
+
+P Value Definition
+Watch the video or read the article below:
+
+A p value is used in hypothesis testing to help you support or reject the null hypothesis. The p value is the evidence against a null hypothesis. 
+The smaller the p-value, the strong the evidence that you should reject the null hypothesis.
+
+For example, a p value of 0.0254 is 2.54%. This means there is a 2.54% chance your results could be random (i.e. happened by chance). 
+That’s pretty tiny. On the other hand, a large p-value of .9(90%) means your results have a 90% probability of being completely random and 
+not due to anything in your experiment. 
+Therefore, the smaller the p-value, the more important (“significant”) your results.
+
+
+
+
+
+
+
+
+

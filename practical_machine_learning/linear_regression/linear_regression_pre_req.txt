@@ -1,0 +1,45 @@
+Sample cases size: 
+In order to apply regression models, the cases-to-Independent Variables (IVs) ratio should ideally be 20:1 
+(for every IV in the model, there need to be 20 cases), the least being 5:1(5 cases for every IV in the model).
+
+Data accuracy: 
+Regression assumes the basic validity of data, and it is expected to run basic data validations before running regression methods. 
+For example, if a variable can have values between 1-5, any value not in the range will need to be corrected.
+
+Outliers: 
+As we learned, outliers are those data points that usually have extreme values and don't naturally appear to be a part of the population. 
+Regression assumes that the outlier values are handled.
+
+Missing data: 
+It is important to look for missing data and address the same. If a specific variable has many missing values, it might be good to eliminate the variable 
+unless there are too many variables with many missing values. 
+
+Normal distribution: 
+It is necessary for the data to be checked to ensure that your data is normally distributed. 
+Plotting data on a histogram is a way to check if the data is normally distributed. 
+Properties of a normal distribution:
+The mean, mode and median are all equal.
+The curve is symmetric at the center (i.e. around the mean, µ).
+Exactly half of the values are to the left of center and exactly half the values are to the right.
+The total area under the curve is 1.
+
+Linear behavior: 
+Linear behavior is, in simple terms, seeing a straight line relationship between the dependent and independent variables. 
+Any non-linear relationship between the IV and DV is ignored. 
+A bivariate scatterplot is used to test for linearity.
+
+Homoscedasticity: 
+Homoscedasticity refers to the constant changes to an independent variable for a change in the dependent variable.
+Similar to the assumption of linearity, violation of the assumption of homoscedasticity does not invalidate regression but weakens it.
+
+
+Multicollinearity and singularity: 
+Multicollinearity is a case where independent variables are highly correlated. 
+In the case of singularity, the independent variables are perfectly correlated and, usually, one IV is a combination of one or more other IVs. 
+Both multicollinearity and singularity can be easily identified using the correlation between IVs.
+
+
+
+
+
+

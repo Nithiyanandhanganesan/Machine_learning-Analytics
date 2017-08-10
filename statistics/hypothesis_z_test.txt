@@ -1,0 +1,32 @@
+Hypothesis Testing:
+----------------------
+
+The main purpose of statistics is to test a hypothesis. For example, you might run an experiment and find that a certain drug is effective at treating headaches. 
+But if you can’t repeat that experiment, no one will take your results seriously.
+
+A hypothesis is an educated guess about something in the world around you. It should be testable, either by experiment or observation. 
+For example:
+ - A new medicine you think might work.
+ - A way of teaching you think might be better.
+ - If I (decrease the amount of water given to herbs) then (the herbs will increase in size).
+
+
+
+Null Hypothesis:
+------------------
+If you trace back the history of science, the null hypothesis is always the accepted fact. 
+Simple examples of null hypotheses that are generally accepted as being true are:
+
+ - DNA is shaped like a double helix.
+ - There are 8 planets in the solar system (excluding Pluto).
+
+
+A hypothesis test evaluates two mutually exclusive statements about a population to determine which statement is best supported by the sample data.
+
+STEPS:
+==========
+
+1. STATE NULL HYPOTHESIS(H0) OR ALTERNATIVE HYPOTHESIS(H1)
+2. CHOOSE THE LEVEL OF SIGNIFICANCE. (area in the tails)
+3. find the critical values. (z value or t value)
+

@@ -1,0 +1,10 @@
+#Analyse the salesprice values and plot the histgram which shows skewness and kurtosis
+#linear behaviour between IV and DV.
+#Multicollinearity and singularity
+#Missing data
+#Out liars  (Univariate and Bivariate analysis)
+
+
+import pandas as pd
+
+df_train = pd.read_csv('C:\Users\753914\Desktop\my_technical\machine_learning\practical_machine_learning\linear_regression\code\house_price_pred')

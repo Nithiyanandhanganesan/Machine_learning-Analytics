@@ -1,0 +1,23 @@
+Standard deviation is a measure of dispersement in statistics. “Dispersement” just means how much your data is spread out. 
+Specifically, it shows you how much your data is spread out around the mean or average.
+
+The empirical rule tells you what percentage of your data falls within a certain number of standard deviations from the mean:
+• 68% of the data falls within one standard deviation of the mean.
+• 95% of the data falls within two standard deviations of the mean.
+• 99.7% of the data falls within three standard deviations of the mean.
+
+For eg: if standard deviation is 14 and mean =50, then 68% data falls between (50 - 14) and (50 + 14) , 95% of data falls between (50 - 28) and (50 + 28)
+
+When the bell curve is flattened (your data is spread out), you have a large standard deviation — your data is further away from the mean. 
+When the bell curve is very steep, your data has a small standard deviation — your data is tightly clustered around the mean. 
+
+The symbol for a sample is s.
+The symbol for a population is s.
+
+
+Binomial distribution:
+------------------------
+
+A binomial distribution is one of the simplest types of distributions in statistics. It’s a type of distribution where there is either success, or failure. 
+For example, winning the lottery: or not winning the lottery.
+

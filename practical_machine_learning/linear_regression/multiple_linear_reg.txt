@@ -1,0 +1,41 @@
+Multiple linear regression:
+============================
+
+Multiple regression is an extension of simple linear regression with one important difference, that there can be two or more independent variables 
+used for predicting or explaining the variance in one dependent variable. Adding more independent variables does not necessarily make the regression better. 
+There could potentially be two problems that could arise, one of which is over-fitting.
+
+Also, adding more independent variables adds more relationships. It is not only that the independent variables are potentially related to the dependent variables, 
+but also there could be a dependency between the independent variables themselves. This condition is called multicollinearity. 
+The ideal expectation is that the independent variables are correlated with the dependent variables, but not with each other.
+
+
+As a result of over-fitting and multicollinearity issues, there is a need for preparatory work before a multiple regression analysis work is to be started. 
+The preparatory work can include computing correlations, mapping scatter plots, and running simple linear regression among others.
+
+Let's say, we have one dependent variable and four independent variables, and there is a multicollinearity risk. 
+This means there are four relationships between the four independent variables and one dependent variable, and among the independent variables, 
+there could be six more. So, there are 10 relationships to consider as shown here. DV stands for dependent variable and IV stands for independent variable.
+
+Some independent variables are better than others for predicting the dependent variable, and some might not contribute anything to the prediction. 
+There is a need to decide which one of the dependent variables to consider.
+
+In multiple regression, each coefficient is interpreted as the estimated change in y corresponding to a one-unit change in the variable, 
+while the rest of the variables are assumed constant.
+
+Let's say we want to fit an independent variable as a function of a lot of variables (x, y, and x2). 
+We can follow a simple procedure to get the coefficients of all the variables. 
+This is applicable for linear, quadratic, and cubic functions.
+
+Order all the points of each variable in a separate column.
+Combine all the columns of the independent variables to be represented as a matrix.
+Add a column to the 1's at the beginning of the matrix.
+Name this matrix as X Matrix.
+Make a separate column matrix of all independent variables and call it Y Matrix.
+Compute the coefficients using the formula here (this is the least square regression):
+B = (XTX)-1XTY
+
+This is a matrix operation, and the resulting vector is the coefficient.
+
+
+

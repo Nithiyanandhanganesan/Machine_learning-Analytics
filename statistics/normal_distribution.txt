@@ -1,0 +1,19 @@
+A normal distribution, sometimes called the bell curve, is a distribution that occurs naturally in many situations. 
+The bell curve is symmetrical. Half of the data will fall to the left of the mean; half will fall to the right.
+
+For normal distribution, 
+
+-The mean, mode and median are all equal.
+-The curve is symmetric at the center (i.e. around the mean, µ).
+-Exactly half of the values are to the left of center and exactly half the values are to the right.
+-The total area under the curve is 1.
+
+
+What is a Gaussian Distribution?
+
+Gaussian Distribution is another name for a normal distribution.
+
+In statistics, the normal distribution is called the normal curve.
+In the social sciences, it’s called the bell curve (because of it’s shape).
+In physics, it’s called the Gaussian distribution.
+

@@ -1,0 +1,55 @@
+Variables:
+------------------
+
+Categorical (for example: young, old).
+   - ordinal,nominal
+     Ordinal (for example: 0, 1).
+Numeric (for example: 1.3, 2.1, 3.2, and so on).
+   - discrete,continuous
+
+
+These algorithms are either grouped by the learning subfields (such as supervised, unsupervised, reinforcement, semi-supervised, or deep) 
+or the problem categories (such as Classification, Regression, Clustering or Optimization). 
+
+
+Logical models are more algorithmic in nature and help us derive a set of rules by running the algorithms iteratively. A Decision tree is one such example
+Geometric models use geometric concepts such as lines, planes, and distances. These models usually operate, or can operate, on high volumes of data. 
+Probabilistic models are statistical models that employ statistical techniques. These models are based on a strategy that defines the relationship between two variables
+
+
+
+data inconsistencies:
+=========================
+
+Under-fitting:
+--------------
+
+A model is said to be under-fitting when it doesn't take into consideration enough information to accurately model the actual data.
+under-fitting is caused not just due to a lack of data, but can also be a result of incorrect modeling.
+The accuracy of the model is determined by a measure called "power" in the statistical world. 
+If the dataset size is too small, we can never target an optimal solution.
+
+
+Over-fitting:
+--------------
+
+While too small a sample is not appropriate to define an optimal solution, a large dataset also runs the risk of having the model over-fit the data.
+
+
+LEARNING TYPES:
+====================
+
+Classification, 
+Regression, 
+clustering 
+Optimization
+Simulation
+
+
+Classification:
+=================
+
+Classification is a way to identify a grouping technique for a given dataset in such a way that depending on a value of the target or output attribute, 
+the entire dataset can be qualified to belong to a class.
+
+eg: all the customers who spend more than 800 dollars in a single purchase are categorized as good customers
